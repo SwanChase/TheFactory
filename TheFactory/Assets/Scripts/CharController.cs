@@ -11,10 +11,7 @@ public class CharController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        forward = Camera.main.transform.forward;
-        forward.y = 0;
-        forward = Vector3.Normalize(forward);
-        right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
+        CheckCameraPosition();
     }
 
     // Update is called once per frame
@@ -24,6 +21,18 @@ public class CharController : MonoBehaviour
         {
             Move();
         }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            CheckCameraPosition();
+        }
+    }
+
+    void CheckCameraPosition()
+    {
+        forward = Camera.main.transform.forward;
+        forward.y = 0;
+        forward = Vector3.Normalize(forward);
+        right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
     }
 
     void Move()
