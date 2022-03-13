@@ -5,6 +5,8 @@ public class CharController : MonoBehaviour
 
     [SerializeField]
     float movespeed = 4;
+    [SerializeField]
+    bool canMove = true;
 
     Vector3 forward, right;
 
@@ -17,7 +19,7 @@ public class CharController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKey)
+        if (Input.anyKey && canMove)
         {
             Move();
         }

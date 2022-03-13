@@ -5,7 +5,7 @@ public class Interactable : MonoBehaviour
     public float r;
     bool closeEnough;
     [SerializeField]
-    Transform player;
+    Transform player, camPos;
 
     [SerializeField]
     Material normal, highlighted;
@@ -13,13 +13,13 @@ public class Interactable : MonoBehaviour
 
     private void Start()
     {
+        
         rend = GetComponent<Renderer>();
         HighLighting(normal);
     }
 
     void Update()
     {
-        
         if (Vector3.Distance(player.position, transform.position) <= r)
         {
             closeEnough = true;
