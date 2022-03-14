@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public float r;
-    bool closeEnough;
+    public float range;
+    bool closeEnough, needsCameraPos = false;
     [SerializeField]
     Transform player, camPos;
 
@@ -13,18 +13,26 @@ public class Interactable : MonoBehaviour
 
     private void Start()
     {
-        
+        if (player!)
+        {
+            Debug.LogWarning("something aint right fam check ya interactables");
+        }
+        if (needsCameraPos == true && camPos!)
+        {
+            Debug.LogWarning("something aint right fam check ya interactable cam pos");
+
+        }
+
         rend = GetComponent<Renderer>();
         HighLighting(normal);
     }
 
     void Update()
     {
-        if (Vector3.Distance(player.position, transform.position) <= r)
+        if (Vector3.Distance(player.position, transform.position) <= range)
         {
             closeEnough = true;
             HighLighting(highlighted);
-
         }
         else
         {
@@ -33,9 +41,10 @@ public class Interactable : MonoBehaviour
         }
         if (closeEnough && Input.GetKeyUp(KeyCode.E))
         {
-
+            Debug.Log("Hallo world");
+            //Delegate of whatever is being interacted with like: to turn off/hijack movement controls for the Player
         }
-        
+
     }
 
     public void HighLighting(Material mat)
@@ -46,6 +55,6 @@ public class Interactable : MonoBehaviour
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, r);
+        Gizmos.DrawWireSphere(transform.position, range);
     }
 }
