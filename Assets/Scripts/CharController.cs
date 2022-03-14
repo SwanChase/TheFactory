@@ -5,25 +5,36 @@ public class CharController : MonoBehaviour
 
     [SerializeField]
     float movespeed = 4;
+    [SerializeField]
+    bool canMove = true;
 
     Vector3 forward, right;
 
     // Start is called before the first frame update
     void Start()
     {
-        forward = Camera.main.transform.forward;
-        forward.y = 0;
-        forward = Vector3.Normalize(forward);
-        right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
+        CheckCameraPosition();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKey)
+        if (Input.anyKey && canMove)
         {
             Move();
         }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            CheckCameraPosition();
+        }
+    }
+
+    void CheckCameraPosition()
+    {
+        forward = Camera.main.transform.forward;
+        forward.y = 0;
+        forward = Vector3.Normalize(forward);
+        right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
     }
 
     void Move()
