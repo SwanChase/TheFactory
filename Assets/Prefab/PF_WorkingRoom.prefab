@@ -261,8 +261,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 13.84, y: 2.14, z: 4.69}
-  m_Center: {x: 0.28, y: -4.2, z: -0.32}
+  m_Size: {x: 13.84, y: 3.14, z: 4.69}
+  m_Center: {x: 0.28, y: -5.46, z: -0.32}
 --- !u!65 &7726438783520030407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2865,7 +2865,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1233910813986895536, guid: bcf600ba6ab67c6409573cd4944c27ae, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.36580643
+      value: -0.4781718
       objectReference: {fileID: 0}
     - target: {fileID: 1233910813986895536, guid: bcf600ba6ab67c6409573cd4944c27ae, type: 3}
       propertyPath: m_ConnectedAnchor.z
@@ -2885,7 +2885,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4726753736360949199, guid: bcf600ba6ab67c6409573cd4944c27ae, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.36580643
+      value: -0.4781718
       objectReference: {fileID: 0}
     - target: {fileID: 4726753736360949199, guid: bcf600ba6ab67c6409573cd4944c27ae, type: 3}
       propertyPath: m_ConnectedAnchor.z
