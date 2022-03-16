@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID SEW = 376462276U;
         static const AkUniqueID UI_CLICK_OPTION = 3276074U;
+        static const AkUniqueID UI_PLAY_BGM = 3641094483U;
         static const AkUniqueID UI_SELECT_OPTION = 3364425874U;
     } // namespace EVENTS
 
