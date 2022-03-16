@@ -708,7 +708,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.0000009536743
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5188574614381443244, guid: b967044507d0205468c91b52dfc51711, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b967044507d0205468c91b52dfc51711, type: 3}
 --- !u!4 &3065968524239096879 stripped
 Transform:
@@ -793,15 +794,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2.2101
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2.2101
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2.2101
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -813,11 +814,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.7151599
+      value: 1.934
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.91492796
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_LocalRotation.x
@@ -825,7 +826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.40361726
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_LocalRotation.z
@@ -837,7 +838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -47.609
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -846,7 +847,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 10c11fda6a7dcd042959cc139e32b498, type: 2}
+      objectReference: {fileID: 2100000, guid: 977735bbcad774c4f93ed5d9169d45aa, type: 2}
     - target: {fileID: -7511558181221131132, guid: 4980fe59abe0bfb4da4a653cb12cf6cd, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
@@ -2865,7 +2866,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1233910813986895536, guid: bcf600ba6ab67c6409573cd4944c27ae, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.4781718
+      value: -0.4781719
       objectReference: {fileID: 0}
     - target: {fileID: 1233910813986895536, guid: bcf600ba6ab67c6409573cd4944c27ae, type: 3}
       propertyPath: m_ConnectedAnchor.z
@@ -2885,7 +2886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4726753736360949199, guid: bcf600ba6ab67c6409573cd4944c27ae, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.4781718
+      value: -0.4781719
       objectReference: {fileID: 0}
     - target: {fileID: 4726753736360949199, guid: bcf600ba6ab67c6409573cd4944c27ae, type: 3}
       propertyPath: m_ConnectedAnchor.z
