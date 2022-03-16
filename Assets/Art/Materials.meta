@@ -1,8 +1,14 @@
 fileFormatVersion: 2
-guid: 060e3b7fd7ee5994a8ff4ccc189302a7
+<<<<<<< HEAD:Assets/Materials/Normal.mat.meta
+guid: 7402c0cbe79419449bf3642858e3fe17
+NativeFormatImporter:
+=======
+guid: 3bf7768bcd0c0844ea1e7f6cb815f435
 folderAsset: yes
 DefaultImporter:
+>>>>>>> Art:Assets/Art/Materials.meta
   externalObjects: {}
+  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
