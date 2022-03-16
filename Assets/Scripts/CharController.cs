@@ -4,8 +4,8 @@ public class CharController : MonoBehaviour
 {
 
     [SerializeField]
-    float movespeed = 4;
-    [SerializeField]
+    float movespeed = 4; // Test
+
     bool canMove = true;
 
     Vector3 forward, right;
@@ -50,5 +50,10 @@ public class CharController : MonoBehaviour
         transform.position += upMovement;
 
 
+    }
+
+    public void SetCanMove(bool i)
+    {
+        canMove = i;
     }
 }

@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
 {
+    [SerializeField]
     public float range;
     bool closeEnough, needsCameraPos = false;
     [SerializeField]
@@ -10,6 +12,9 @@ public class Interactable : MonoBehaviour
     [SerializeField]
     Material normal, highlighted;
     Renderer rend;
+
+    [SerializeField]
+    public UnityEvent onInteraction;
 
     private void Start()
     {
@@ -20,11 +25,15 @@ public class Interactable : MonoBehaviour
         if (needsCameraPos == true && camPos!)
         {
             Debug.LogWarning("something aint right fam check ya interactable cam pos");
-
         }
 
         rend = GetComponent<Renderer>();
         HighLighting(normal);
+
+        if (onInteraction == null)
+        {
+            onInteraction = new UnityEvent();
+        }
     }
 
     void Update()
@@ -39,10 +48,11 @@ public class Interactable : MonoBehaviour
             closeEnough = false;
             HighLighting(normal);
         }
+
         if (closeEnough && Input.GetKeyUp(KeyCode.E))
         {
             Debug.Log("Hallo world");
-            //Delegate of whatever is being interacted with like: to turn off/hijack movement controls for the Player
+            onInteraction.Invoke();
         }
 
     }
