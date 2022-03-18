@@ -43,12 +43,17 @@ public class GameManager : MonoBehaviour
 
         if (bodyTemperature < 35f)
         {
-            //SceneManager.LoadScene("Game Over");
+            EndScene();
         }
         RoomTempTextfield.text = "Room Temp: " + roomTemperature.ToString("0.0") + "°C";
         BodyTempTextfield.text = "Body Temp: " + bodyTemperature.ToString("0.0") + "°C";
         ClothingQualityTextField.text = "Quality %" + quality.ToString("0.0");
         ClothingDurabilityTextfield.text = "Durability %" + durability.ToString("0.0");
+    }
+
+    public void EndScene()
+    {
+        SceneManager.LoadScene("Menu");
     }
 
     public void SetNewShirt(int qualityScore)
