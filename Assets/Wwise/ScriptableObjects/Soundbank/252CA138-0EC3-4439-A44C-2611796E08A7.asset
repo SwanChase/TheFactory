@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec85755fe33ad96498ceb07b75713767, type: 3}
   m_Name: 252CA138-0EC3-4439-A44C-2611796E08A7
   m_EditorClassIdentifier: 
-  objectName: Sewed_Up
-  id: 3738941433
+  objectName: Main
+  id: 3161908922
   guid: 252CA138-0EC3-4439-A44C-2611796E08A7
