@@ -389,6 +389,7 @@ MonoBehaviour:
   camPos: {fileID: 0}
   normal: {fileID: 2100000, guid: 30b2595fbca80d140a05166ccd7f593a, type: 2}
   highlighted: {fileID: 2100000, guid: eb236468d14c4b04db1ba6cb7f406791, type: 2}
+  TargetModel: {fileID: 0}
   onInteraction:
     m_PersistentCalls:
       m_Calls:
@@ -693,6 +694,7 @@ MonoBehaviour:
   camPos: {fileID: 1981338955}
   normal: {fileID: 2100000, guid: 30b2595fbca80d140a05166ccd7f593a, type: 2}
   highlighted: {fileID: 2100000, guid: eb236468d14c4b04db1ba6cb7f406791, type: 2}
+  TargetModel: {fileID: 0}
   onInteraction:
     m_PersistentCalls:
       m_Calls:
@@ -1002,6 +1004,7 @@ MonoBehaviour:
   camPos: {fileID: 0}
   normal: {fileID: 2100000, guid: a95f8f122ad633949a6c78a9d9e905d7, type: 2}
   highlighted: {fileID: 2100000, guid: eb236468d14c4b04db1ba6cb7f406791, type: 2}
+  TargetModel: {fileID: 0}
   onInteraction:
     m_PersistentCalls:
       m_Calls:
@@ -1249,6 +1252,7 @@ MonoBehaviour:
   camPos: {fileID: 0}
   normal: {fileID: 2100000, guid: 977735bbcad774c4f93ed5d9169d45aa, type: 2}
   highlighted: {fileID: 2100000, guid: eb236468d14c4b04db1ba6cb7f406791, type: 2}
+  TargetModel: {fileID: 0}
   onInteraction:
     m_PersistentCalls:
       m_Calls:
@@ -1445,6 +1449,10 @@ PrefabInstance:
     - target: {fileID: 2314093351480568631, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.955
+      objectReference: {fileID: 0}
+    - target: {fileID: 2989705828129034403, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.553
       objectReference: {fileID: 0}
     - target: {fileID: 3171193206343638446, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: m_ConnectedAnchor.y
