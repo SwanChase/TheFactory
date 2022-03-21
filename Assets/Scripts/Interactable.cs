@@ -11,7 +11,10 @@ public class Interactable : MonoBehaviour
 
     [SerializeField]
     Material normal, highlighted;
+    
     Renderer rend;
+    [SerializeField]
+    GameObject TargetModel;
 
     [SerializeField]
     public UnityEvent onInteraction;
