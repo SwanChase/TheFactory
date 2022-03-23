@@ -126,6 +126,10 @@ public class CuttingMinigameController : MonoBehaviour
     {
         quality = quality - (damageSpeed * Time.deltaTime);
     }
+    public void DecreaseShirtDurabilityHigh()
+    {
+        quality = quality - 50;
+    }
 
     public void ResetMinigame()
     {

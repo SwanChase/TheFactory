@@ -6,7 +6,10 @@ using UnityEngine.Events;
 public class LineNode : MonoBehaviour
 {
     [SerializeField] private bool finishNode = false;
+    [SerializeField] private bool OnHitCheatNode;
     public UnityEvent OnHitFinishNode;
+    
+
 
     void Start()
     {
@@ -25,6 +28,11 @@ public class LineNode : MonoBehaviour
         if (collision.tag == "Player" && finishNode)
         {
             Debug.Log("FinishNode");
+            OnHitFinishNode.Invoke();
+        }
+        if (collision.tag == "Player" && OnHitCheatNode)
+        {
+            Debug.Log("CheaterNode");
             OnHitFinishNode.Invoke();
         }
     }
