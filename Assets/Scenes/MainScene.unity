@@ -1634,6 +1634,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -2.955
       objectReference: {fileID: 0}
+    - target: {fileID: 2507687399035194307, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2507687399035194307, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2507687399035194307, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2507687399035194307, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2989705828129034403, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.553
@@ -1682,6 +1698,30 @@ PrefabInstance:
       propertyPath: onInteraction.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1981338955}
+    - target: {fileID: 6573191076171938127, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6573191076171938127, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6573191076171938127, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6573191076171938127, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6573191076171938127, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6573191076171938127, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7404164542841750863, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: m_RootOrder
       value: 12
