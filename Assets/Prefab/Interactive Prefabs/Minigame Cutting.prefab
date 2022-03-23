@@ -91,7 +91,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110887018}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -113,9 +113,97 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &441225246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 441225247}
+  - component: {fileID: 441225248}
+  - component: {fileID: 441225249}
+  m_Layer: 7
+  m_Name: AntiCheatWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &441225247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441225246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2685543136603491511}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &441225248
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441225246}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.41978168}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.12, y: 1.2167249}
+  m_EdgeRadius: 0
+--- !u!114 &441225249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441225246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84938dceb4d0f1941968df202ed67ad6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finishNode: 0
+  OnHitCheatNode: 1
+  OnHitFinishNode:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2329336978583077580}
+        m_TargetAssemblyTypeName: CuttingMinigameController, Assembly-CSharp
+        m_MethodName: DecreaseShirtDurabilityHigh
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &499233922
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +295,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 499233922}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -229,6 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -323,7 +412,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893857993}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -345,6 +434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -547,7 +637,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960275868}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -569,6 +659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -663,7 +754,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066262789}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -685,6 +776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -779,7 +871,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231822851}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -801,6 +893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -895,7 +988,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349131993}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -917,6 +1010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -1011,7 +1105,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362721789}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1033,6 +1127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -1127,7 +1222,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453672397}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1149,6 +1244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -1243,7 +1339,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518136251}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1265,6 +1361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -1359,7 +1456,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536172076}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1381,6 +1478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -1475,7 +1573,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1689233007}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1497,6 +1595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -1591,7 +1690,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698978393}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1613,6 +1712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -1707,7 +1807,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1708984866}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1729,6 +1829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -1931,7 +2032,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1878012270}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -1953,6 +2054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -2047,7 +2149,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958802415}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2069,6 +2171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -2163,7 +2266,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008898872}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2185,6 +2288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -2279,7 +2383,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051433956}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2301,6 +2405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -2395,7 +2500,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114911944}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2417,6 +2522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -2511,7 +2617,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2685543136398175008}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2533,6 +2639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -2591,6 +2698,7 @@ Transform:
   - {fileID: 1708984867}
   - {fileID: 960275869}
   - {fileID: 2685543137636821160}
+  - {fileID: 441225247}
   m_Father: {fileID: 2685543137577303995}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2736,7 +2844,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2685543136866654246}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2758,6 +2866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -2852,7 +2961,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2685543136879529873}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2874,6 +2983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -3090,6 +3200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -3674,6 +3785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 1
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls:
@@ -3924,7 +4036,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2685543138290580569}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -3946,6 +4058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -4040,7 +4153,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2685543138345129344}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -4062,6 +4175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finishNode: 0
+  OnHitCheatNode: 0
   OnHitFinishNode:
     m_PersistentCalls:
       m_Calls: []
@@ -4115,7 +4229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d2f3dd87ff0085429bb3dca1efa065d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineNodes: {fileID: 0}
   nodes: []
   onMiniGameFinished:
     m_PersistentCalls:
@@ -4182,7 +4295,7 @@ MonoBehaviour:
         m_CallState: 2
   shirt: {fileID: 2685543136603491511}
   seamLineCollision: {fileID: 2685543137410179048}
-  needle: {fileID: 2685543137800172580}
+  scissors: {fileID: 2685543137800172580}
   camera2D: {fileID: 2685543137573319880}
   insideLine: 0
   increaseSpeedAmount: 0.01
