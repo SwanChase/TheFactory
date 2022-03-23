@@ -11,7 +11,7 @@ public class Interactable : MonoBehaviour
 
     [SerializeField]
     Material normal, highlighted;
-    
+
     Renderer rend;
     [SerializeField]
     GameObject TargetModel;
@@ -69,5 +69,10 @@ public class Interactable : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, range);
+    }
+
+    public void OutfitChange()
+    {
+
     }
 }
