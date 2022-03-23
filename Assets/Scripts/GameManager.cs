@@ -6,6 +6,7 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public WarDrobe warDrobe;
     private float roomTemperature = 23f;
     private float bodyTemperature = 37f;
     private float quality = 10f;
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     public TMP_Text BodyTempTextfield;
     public TMP_Text ClothingQualityTextField;
     public TMP_Text ClothingDurabilityTextfield;
+
 
     public float Quality
     {
@@ -58,10 +60,12 @@ public class GameManager : MonoBehaviour
         {
             EndScene();
         }
-        RoomTempTextfield.text = "Room Temp: " + roomTemperature.ToString("0.0") + "°C";
-        BodyTempTextfield.text = "Body Temp: " + bodyTemperature.ToString("0.0") + "°C";
+        RoomTempTextfield.text = "Room Temp: " + roomTemperature.ToString("0.0") + "ï¿½C";
+        BodyTempTextfield.text = "Body Temp: " + bodyTemperature.ToString("0.0") + "ï¿½C";
         ClothingQualityTextField.text = "Quality %" + quality.ToString("0.0");
         ClothingDurabilityTextfield.text = "Durability %" + durability.ToString("0.0");
+
+        playerfeedback();
     }
 
     public void EndScene()
@@ -73,5 +77,17 @@ public class GameManager : MonoBehaviour
     {
         quality = qualityScore;
         durability = 100;
+    }
+
+    void playerfeedback()
+    {
+        if (durability < 40)
+        {
+            ClothingDurabilityTextfield.color = Color.red;
+            print("red");
+
+            warDrobe.lowQuality();
+        }
+
     }
 }

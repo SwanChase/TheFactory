@@ -42,4 +42,9 @@ public class WarDrobe : MonoBehaviour
     {
         onChanging.Invoke(quality);
     }
+
+    public void lowQuality()
+    {
+        skinrend.material = oldOutfit;
+    }
 }
