@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.Events;
 using TMPro;
 
-public class ShirtMinigameController : MonoBehaviour
+public class CuttingMinigameController : MonoBehaviour
 {
     private bool minigameRunning = false;
+    [SerializeField] private LineController lineNodes = new LineController();
+    [SerializeField] List<Transform> nodes;
 
     public bool MinigameRunning
     {
@@ -21,6 +23,7 @@ public class ShirtMinigameController : MonoBehaviour
             camera2D.SetActive(value);
         }
     }
+
 
     public UnityEvent<int> onMiniGameFinished;
 
@@ -47,17 +50,18 @@ public class ShirtMinigameController : MonoBehaviour
         {
             onMiniGameFinished = new UnityEvent<int>();
         }
+        //nodes = lineNodes.NodesList;
+        foreach (Transform node in nodes)
+        {
 
+        }
         startingPosition = shirt.position;
     }
     private void FixedUpdate()
     {
         if (minigameRunning)
         {
-            sewingSpeed += increaseSpeedAmount * Time.time / 10000;
-            movementSpeed += increaseSpeedAmount / 2 * Time.time / 10000;
-            damageSpeed += increaseDamageAmount / 2 * Time.time / 1000;
-
+            
         }
     }
 
@@ -74,10 +78,6 @@ public class ShirtMinigameController : MonoBehaviour
         insideLine = seamLineCollision.IsGameObjectInTrigger(needle);
 
         Vector2 shirtPosition = shirt.position;
-        float inputFloat = Input.GetAxis("Horizontal");
-
-        shirtPosition.x -= Time.deltaTime * inputFloat * movementSpeed;
-        shirtPosition.y -= Time.deltaTime * sewingSpeed;
 
         if (shirtPosition.y < -0.88f)
         {
@@ -99,7 +99,6 @@ public class ShirtMinigameController : MonoBehaviour
             yield return new WaitForSeconds(.5f);
             sewingInterval -= increaseSpeedAmount * Time.deltaTime / 10;
             yield return new WaitForSeconds(.5f);
-
         }
     }
     IEnumerator IntervalAudioCue()
