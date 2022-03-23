@@ -5,17 +5,12 @@ using UnityEngine;
 public class ScissorDragAndDrop : MonoBehaviour
 {
     [SerializeField] private Camera scissorCam;
-    //private Vector3 mOffset;
-    //private float mZCoord;
-
     private bool isDraggingDeez = false;
 
 
     private void OnMouseDown()
     {
         isDraggingDeez = true;
-        //mZCoord = scissorCam.WorldToScreenPoint(gameObject.transform.position).z;
-        //mOffset = gameObject.transform.position - GetMouseWorldPos();
     }
 
     private void OnMouseUp()
@@ -31,16 +26,4 @@ public class ScissorDragAndDrop : MonoBehaviour
             transform.Translate(mousPos);
         }
     }
-
-    //private Vector3 GetMouseWorldPos()
-    //{
-    //    Vector3 mousePoint = Input.mousePosition;
-    //    mousePoint.z = mZCoord;
-    //    return Camera.current.ScreenToWorldPoint(mousePoint);
-    //}
-
-    //private void OnMouseDrag()
-    //{
-    //    transform.position = GetMouseWorldPos() + mOffset;
-    //}
 }

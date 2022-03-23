@@ -7,7 +7,8 @@ using TMPro;
 public class CuttingMinigameController : MonoBehaviour
 {
     private bool minigameRunning = false;
-    [SerializeField] private LineController lineNodes = new LineController();
+    private GameManager clothQuality = new GameManager();
+    private LineController lineNodes = new LineController();
     [SerializeField] List<Transform> nodes;
 
     public bool MinigameRunning
@@ -24,7 +25,6 @@ public class CuttingMinigameController : MonoBehaviour
         }
     }
 
-
     public UnityEvent<int> onMiniGameFinished;
 
     [SerializeField] private Transform shirt;
@@ -37,10 +37,12 @@ public class CuttingMinigameController : MonoBehaviour
     [SerializeField] private float movementSpeed = 1.0f;
     [SerializeField] private float sewingInterval = 0.070f;
 
-    private float quality = 100f;
     [SerializeField] private TMP_Text qualityText;
     [SerializeField] private float increaseDamageAmount = 0.1f;
     [SerializeField] private float damageSpeed = 1f;
+
+    private float quality = 100f;
+
 
     private Vector2 startingPosition;
 
@@ -61,7 +63,7 @@ public class CuttingMinigameController : MonoBehaviour
     {
         if (minigameRunning)
         {
-            
+
         }
     }
 
@@ -82,7 +84,7 @@ public class CuttingMinigameController : MonoBehaviour
         if (shirtPosition.y < -0.88f)
         {
             Debug.Log("MiniGame Done " + shirtPosition.y);
-            onMiniGameFinished.Invoke(((int)quality));
+            FinishedMiniGame();
         }
         if (quality <= 0)
         {
@@ -90,6 +92,11 @@ public class CuttingMinigameController : MonoBehaviour
         }
         qualityText.text = quality.ToString("0.0");
         shirt.position = shirtPosition;
+    }
+
+    public void FinishedMiniGame()
+    {
+        onMiniGameFinished.Invoke(((int)quality));
     }
 
     IEnumerator IntervalCalc()

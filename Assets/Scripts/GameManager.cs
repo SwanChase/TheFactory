@@ -6,15 +6,28 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public float roomTemperature = 23f;
-    public float bodyTemperature = 37f;
-    public float quality = 10f;
+    private float roomTemperature = 23f;
+    private float bodyTemperature = 37f;
+    private float quality = 10f;
     public float durability = 100;
 
     public TMP_Text RoomTempTextfield;
     public TMP_Text BodyTempTextfield;
     public TMP_Text ClothingQualityTextField;
     public TMP_Text ClothingDurabilityTextfield;
+
+    public float Quality
+    {
+        get
+        {
+            return quality;
+        }
+
+        set
+        {
+            quality = value;
+        }
+    }
 
     void Start()
     {
