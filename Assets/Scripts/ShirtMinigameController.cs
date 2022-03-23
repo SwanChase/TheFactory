@@ -29,11 +29,11 @@ public class ShirtMinigameController : MonoBehaviour
     public GameObject needle;
     public GameObject camera2D;
     public bool insideLine = false;
-    public float increaseSpeedAmount = 0.1f;
-    public float sewingSpeed = 1.0f;
+    public float increaseSpeedAmount = 0.01f;
+    public float sewingSpeed = 0.05f;
     public float movementSpeed = 1.0f;
+    public float sewingInterval = 0.070f;
 
-    
     private float quality = 100f;
     public TMP_Text qualityText;
     public float increaseDamageAmount = 0.1f;
@@ -54,12 +54,11 @@ public class ShirtMinigameController : MonoBehaviour
     {
         if (minigameRunning)
         {
-            sewingSpeed += increaseSpeedAmount * Time.time/10000;
-            movementSpeed += increaseSpeedAmount / 2 * Time.time/10000;
+            sewingSpeed += increaseSpeedAmount * Time.time / 10000;
+            movementSpeed += increaseSpeedAmount / 2 * Time.time / 10000;
             damageSpeed += increaseDamageAmount / 2 * Time.time / 1000;
-        }
-        
 
+        }
     }
 
     void Update()
@@ -68,6 +67,9 @@ public class ShirtMinigameController : MonoBehaviour
         {
             return;
         }
+        AudioSetup();
+        StartCoroutine(IntervalCalc());
+        StartCoroutine(IntervalAudioCue());
 
         insideLine = seamLineCollision.IsGameObjectInTrigger(needle);
 
@@ -92,6 +94,31 @@ public class ShirtMinigameController : MonoBehaviour
         qualityText.text = quality.ToString("0.0");
         shirt.position = shirtPosition;
     }
+
+    IEnumerator IntervalCalc()
+    {
+        while (minigameRunning)
+        {
+            yield return new WaitForSeconds(.5f);
+            sewingInterval -= increaseSpeedAmount * Time.deltaTime / 10;
+            yield return new WaitForSeconds(.5f);
+
+        }
+    }
+    IEnumerator IntervalAudioCue()
+    {
+        while (minigameRunning)
+        {
+            yield return new WaitForSeconds(sewingSpeed);
+            //AkSoundEngine.PostEvent("Sew", gameObject);
+        }
+    }
+    private void AudioSetup()
+    {
+        //AkSoundEngine.SetRTPCValue("Sewing_Speed", sewingInterval*100);
+
+    }
+
 
     public void DecreaseShirtDurability()
     {
