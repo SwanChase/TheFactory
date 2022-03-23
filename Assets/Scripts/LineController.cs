@@ -5,8 +5,16 @@ using UnityEngine;
 [RequireComponent(typeof(LineController))]
 public class LineController : MonoBehaviour
 {
-    [SerializeField] List<Transform> nodes;
-    LineRenderer lr;
+    [SerializeField]private List<Transform> nodes;
+    private LineRenderer lr;
+
+    public List<Transform> NodesList
+    {
+        get
+        {
+            return nodes;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()

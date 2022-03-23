@@ -8,7 +8,7 @@ using UnityEngine.Events;
 public class LineCollision : MonoBehaviour
 {
     public UnityEvent OutsideLineEvent;
-    bool outsideLine = false;
+    private  bool outsideLine = false;
 
     LineController lineController;
     PolygonCollider2D polygonCollider;

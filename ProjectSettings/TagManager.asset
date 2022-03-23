@@ -6,6 +6,7 @@ TagManager:
   tags:
   - LineStart
   - LineEnd
+  - AntiCheat
   layers:
   - Default
   - TransparentFX
