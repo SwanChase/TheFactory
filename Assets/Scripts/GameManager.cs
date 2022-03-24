@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(Cool());
     }
+
     IEnumerator Cool()
     {
         while (true)
@@ -69,9 +70,9 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    public void SetNewShirt(int qualityScore)
+    public void SetNewShirt(int qualityScore, int durabilityScore)
     {
         quality = qualityScore;
-        durability = 100;
+        durability = durabilityScore;
     }
 }
