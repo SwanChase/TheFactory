@@ -18,10 +18,13 @@ namespace AK
         static const AkUniqueID UI_CLICK_OPTION = 3276074U;
         static const AkUniqueID UI_PLAY_BGM = 3641094483U;
         static const AkUniqueID UI_SELECT_OPTION = 3364425874U;
+        static const AkUniqueID UNSEW = 2002818179U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID COUNT = 2938671170U;
+        static const AkUniqueID SCISSOR_POWER = 3321106099U;
         static const AkUniqueID SEWING_SPEED = 2851447356U;
     } // namespace GAME_PARAMETERS
 

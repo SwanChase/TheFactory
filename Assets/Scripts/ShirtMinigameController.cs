@@ -39,6 +39,8 @@ public class ShirtMinigameController : MonoBehaviour
     public float increaseDamageAmount = 0.1f;
     public float damageSpeed = 1f;
 
+    //public AK.Wwise.Event MyEvent;
+
     private Vector2 startingPosition;
 
     void Start()
@@ -110,13 +112,16 @@ public class ShirtMinigameController : MonoBehaviour
         while (minigameRunning)
         {
             yield return new WaitForSeconds(sewingSpeed);
+            //AkSoundEngine.PostEvent("Unsew", gameObject);
             //AkSoundEngine.PostEvent("Sew", gameObject);
+            Debug.Log(sewingSpeed);
         }
     }
     private void AudioSetup()
     {
-        //AkSoundEngine.SetRTPCValue("Sewing_Speed", sewingInterval*100);
-
+        float inputMS = sewingInterval*1000;
+        AkSoundEngine.SetRTPCValue("Sewing_Speed", inputMS);
+        //Debug.Log(sewingInterval*1000);
     }
 
 
