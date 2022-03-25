@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4275760556">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1446108957">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1263337805">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3317030786">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -217,6 +217,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2002818179" Name="Unsew" ObjectPath="\Events\Default Work Unit\Unsew"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="72576786" Language="SFX">
@@ -230,6 +231,10 @@
 				<File Id="107027884" Language="SFX">
 					<ShortName>SEW_SFX_Sewing_Machine_480ms_1.wav</ShortName>
 					<Path>SFX\SEW_SFX_Sewing_Machine_480ms_1_10C4C929.wem</Path>
+				</File>
+				<File Id="110480606" Language="SFX">
+					<ShortName>Clean_Cut_3.wav</ShortName>
+					<Path>SFX\Clean_Cut_3_10C4C929.wem</Path>
 				</File>
 				<File Id="118793406" Language="SFX">
 					<ShortName>SEW_SFX_Sewing_Machine_333ms_1.wav</ShortName>
@@ -395,9 +400,14 @@
 					<ShortName>SEW_SFX_Sewing_Machine_155ms_4.wav</ShortName>
 					<Path>SFX\SEW_SFX_Sewing_Machine_155ms_4_10C4C929.wem</Path>
 				</File>
+				<File Id="993543153" Language="SFX">
+					<ShortName>Clean_Cut_4.wav</ShortName>
+					<Path>SFX\Clean_Cut_4_10C4C929.wem</Path>
+				</File>
 			</IncludedMemoryFiles>
 			<GameParameters>
 				<GameParameter Id="2851447356" Name="Sewing_Speed" ObjectPath="\Game Parameters\Default Work Unit\Sewing_Speed"/>
+				<GameParameter Id="3321106099" Name="Scissor_Power" ObjectPath="\Game Parameters\Default Work Unit\Scissor_Power"/>
 			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
