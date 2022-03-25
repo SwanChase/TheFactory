@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class WarDrobe : MonoBehaviour
 {
     public int quality;
+    public int durability;
 
     public GameObject playerskin;
 
@@ -14,7 +15,7 @@ public class WarDrobe : MonoBehaviour
     public Material newOutfit, oldOutfit;
 
     [SerializeField]
-    public UnityEvent<int> onChanging;
+    public UnityEvent<int,int> onChanging;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,7 @@ public class WarDrobe : MonoBehaviour
 
         if (onChanging == null)
         {
-            onChanging = new UnityEvent<int>();
+            onChanging = new UnityEvent<int, int>();
         }
     }
 
@@ -32,15 +33,19 @@ public class WarDrobe : MonoBehaviour
     {
 
     }
+    public void FreshChange()
+    {
+        onChanging.Invoke(quality, durability);
+        
+    }
     public void SetQuality(int newQuality)
     {
         quality = newQuality;
         skinrend.material = newOutfit;
     }
-
-    public void FreshChange()
+    public void SetDurability(int newDurability)
     {
-        onChanging.Invoke(quality);
+        durability = newDurability;
     }
 
     public void lowQuality()

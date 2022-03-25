@@ -29,7 +29,7 @@ public class CuttingMinigameController : MonoBehaviour
 
     [SerializeField] private Transform shirt;
     [SerializeField] private LineCollision seamLineCollision;
-    [SerializeField] private GameObject needle;
+    [SerializeField] private GameObject scissors;
     [SerializeField] private GameObject camera2D;
     [SerializeField] private bool insideLine = false;
     [SerializeField] private float increaseSpeedAmount = 0.01f;
@@ -45,6 +45,8 @@ public class CuttingMinigameController : MonoBehaviour
 
 
     private Vector2 startingPosition;
+    private Vector3 startingPositionSciccors;
+
 
     void Start()
     {
@@ -58,6 +60,10 @@ public class CuttingMinigameController : MonoBehaviour
 
         }
         startingPosition = shirt.position;
+        startingPositionSciccors = scissors.transform.position;
+        startingPositionSciccors.z -= 1;
+
+
     }
     private void FixedUpdate()
     {
@@ -77,7 +83,7 @@ public class CuttingMinigameController : MonoBehaviour
         StartCoroutine(IntervalCalc());
         StartCoroutine(IntervalAudioCue());
 
-        insideLine = seamLineCollision.IsGameObjectInTrigger(needle);
+        insideLine = seamLineCollision.IsGameObjectInTrigger(scissors);
 
         Vector2 shirtPosition = shirt.position;
 
@@ -134,6 +140,8 @@ public class CuttingMinigameController : MonoBehaviour
     public void ResetMinigame()
     {
         shirt.position = startingPosition;
+        scissors.transform.position = startingPositionSciccors;
+
         quality = 100;
     }
 }
