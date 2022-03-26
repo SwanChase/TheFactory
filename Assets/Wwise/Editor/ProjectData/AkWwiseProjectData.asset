@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7407ff416a69744e99d475f99a6ded15
     GuidInternal: 
-    m_lastTime: -8585541769541451718
+    m_lastTime: -8585535685095177798
     List:
     - name: Footstep
       guid: bdf02316fa3e52458efbddb39953783e
@@ -207,6 +207,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.187479
       minDuration: 0.187479
+    - name: Unsew
+      guid: 6699c8bd25d60042b1d85f88d50a1ed1
+      id: 2002818179
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Unsew
+        ObjectType: 3
+        guid: 6699c8bd25d60042b1d85f88d50a1ed1
+      Path: Events\Default Work Unit\Unsew
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -219,8 +236,36 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 9515757f22eb594f9dba736b079a9291
     GuidInternal: 
-    m_lastTime: -8585543464064340495
+    m_lastTime: -8585535670059152451
     List:
+    - name: Count
+      guid: 6e605ac13ca80b458f6a68e10ab72475
+      id: 2938671170
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9515757f22eb594f9dba736b079a9291
+      - ElementName: Count
+        ObjectType: 13
+        guid: 6e605ac13ca80b458f6a68e10ab72475
+      Path: Game Parameters\Default Work Unit\Count
+    - name: Scissor_Power
+      guid: 545165b4e90ae9438e79c02ecace5517
+      id: 3321106099
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9515757f22eb594f9dba736b079a9291
+      - ElementName: Scissor_Power
+        ObjectType: 13
+        guid: 545165b4e90ae9438e79c02ecace5517
+      Path: Game Parameters\Default Work Unit\Scissor_Power
     - name: Sewing_Speed
       guid: fd83f4ecf7aa1b4baf1f9f8866716ded
       id: 2851447356
@@ -278,7 +323,7 @@ MonoBehaviour:
     m_lastTime: -8585543264727911453
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 040000000500000006000000090000001300000014000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -24,20 +24,22 @@ public class ShirtMinigameController : MonoBehaviour
 
     public UnityEvent<int> onMiniGameFinished;
 
-    [SerializeField] private Transform shirt;
-    [SerializeField] private LineCollision seamLineCollision;
-    [SerializeField] private GameObject needle;
-    [SerializeField] private GameObject camera2D;
-    [SerializeField] private bool insideLine = false;
-    [SerializeField] private float increaseSpeedAmount = 0.01f;
-    [SerializeField] private float sewingSpeed = 0.05f;
-    [SerializeField] private float movementSpeed = 1.0f;
-    [SerializeField] private float sewingInterval = 0.070f;
+    public Transform shirt;
+    public LineCollision seamLineCollision;
+    public GameObject needle;
+    public GameObject camera2D;
+    public bool insideLine = false;
+    public float increaseSpeedAmount = 0.01f;
+    public float sewingSpeed = 0.05f;
+    public float movementSpeed = 1.0f;
+    public float sewingInterval = 0.070f;
 
     private float quality = 100f;
-    [SerializeField] private TMP_Text qualityText;
-    [SerializeField] private float increaseDamageAmount = 0.1f;
-    [SerializeField] private float damageSpeed = 1f;
+    public TMP_Text qualityText;
+    public float increaseDamageAmount = 0.1f;
+    public float damageSpeed = 1f;
+
+    //public AK.Wwise.Event MyEvent;
 
     private Vector2 startingPosition;
 
@@ -76,6 +78,9 @@ public class ShirtMinigameController : MonoBehaviour
         Vector2 shirtPosition = shirt.position;
         float inputFloat = Input.GetAxis("Horizontal");
 
+        //if (inputFloat > 0) inputFloat = 1;
+        //if (inputFloat < 0) inputFloat = -1;
+
         shirtPosition.x -= Time.deltaTime * inputFloat * movementSpeed;
         shirtPosition.y -= Time.deltaTime * sewingSpeed;
 
@@ -107,22 +112,22 @@ public class ShirtMinigameController : MonoBehaviour
         while (minigameRunning)
         {
             yield return new WaitForSeconds(sewingSpeed);
+            //AkSoundEngine.PostEvent("Unsew", gameObject);
             //AkSoundEngine.PostEvent("Sew", gameObject);
+            Debug.Log(sewingSpeed);
         }
     }
     private void AudioSetup()
     {
-        //AkSoundEngine.SetRTPCValue("Sewing_Speed", sewingInterval*1000);
+        float inputMS = sewingInterval*1000;
+        AkSoundEngine.SetRTPCValue("Sewing_Speed", inputMS);
+        //Debug.Log(sewingInterval*1000);
     }
 
 
     public void DecreaseShirtDurability()
     {
         quality = quality - (damageSpeed * Time.deltaTime);
-    }
-    public void DecreaseShirtDurabilityHigh()
-    {
-        quality = quality - 50;
     }
 
     public void ResetMinigame()
