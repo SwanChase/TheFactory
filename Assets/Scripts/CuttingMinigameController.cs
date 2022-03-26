@@ -32,16 +32,16 @@ public class CuttingMinigameController : MonoBehaviour
     [SerializeField] private GameObject scissors;
     [SerializeField] private GameObject camera2D;
     [SerializeField] private bool insideLine = false;
-    [SerializeField] private float increaseSpeedAmount = 0.01f;
-    [SerializeField] private float sewingSpeed = 0.05f;
     [SerializeField] private float movementSpeed = 1.0f;
-    [SerializeField] private float sewingInterval = 0.070f;
 
     [SerializeField] private TMP_Text qualityText;
     [SerializeField] private float increaseDamageAmount = 0.1f;
     [SerializeField] private float damageSpeed = 1f;
+    private float durability = 100f;
 
-    private float quality = 100f;
+    public float sewingSpeed = 0.05f;
+
+
 
 
     private Vector2 startingPosition;
@@ -69,7 +69,7 @@ public class CuttingMinigameController : MonoBehaviour
     {
         if (minigameRunning)
         {
-
+            damageSpeed += increaseDamageAmount / 2 * Time.time / 1000;
         }
     }
 
@@ -80,7 +80,6 @@ public class CuttingMinigameController : MonoBehaviour
             return;
         }
         AudioSetup();
-        StartCoroutine(IntervalCalc());
         StartCoroutine(IntervalAudioCue());
 
         insideLine = seamLineCollision.IsGameObjectInTrigger(scissors);
@@ -92,28 +91,20 @@ public class CuttingMinigameController : MonoBehaviour
             Debug.Log("MiniGame Done " + shirtPosition.y);
             FinishedMiniGame();
         }
-        if (quality <= 0)
+        if (durability <= 0)
         {
+            FinishedMiniGame();
             ResetMinigame();
         }
-        qualityText.text = quality.ToString("0.0");
+        qualityText.text = "Durability: "+ durability.ToString("0.0");
         shirt.position = shirtPosition;
     }
 
     public void FinishedMiniGame()
     {
-        onMiniGameFinished.Invoke(((int)quality));
+        onMiniGameFinished.Invoke(((int)durability));
     }
 
-    IEnumerator IntervalCalc()
-    {
-        while (minigameRunning)
-        {
-            yield return new WaitForSeconds(.5f);
-            sewingInterval -= increaseSpeedAmount * Time.deltaTime / 10;
-            yield return new WaitForSeconds(.5f);
-        }
-    }
     IEnumerator IntervalAudioCue()
     {
         while (minigameRunning)
@@ -130,11 +121,11 @@ public class CuttingMinigameController : MonoBehaviour
 
     public void DecreaseShirtDurability()
     {
-        quality = quality - (damageSpeed * Time.deltaTime);
+        durability = durability - (damageSpeed * Time.deltaTime);
     }
     public void DecreaseShirtDurabilityHigh()
     {
-        quality = quality - 50;
+        durability = durability - 50;
     }
 
     public void ResetMinigame()
@@ -142,6 +133,6 @@ public class CuttingMinigameController : MonoBehaviour
         shirt.position = startingPosition;
         scissors.transform.position = startingPositionSciccors;
 
-        quality = 100;
+        durability = 100;
     }
 }

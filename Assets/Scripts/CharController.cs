@@ -10,13 +10,11 @@ public class CharController : MonoBehaviour
 
     Vector3 forward, right;
 
-    // Start is called before the first frame update
     void Start()
     {
         CheckCameraPosition();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.anyKey && canMove)
