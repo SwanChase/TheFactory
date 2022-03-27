@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Art Test Swan.unity
     guid: 2d7927aaced6bb5479765ac7a314b97a
+  - enabled: 1
+    path: Assets/Scenes/Win_Scene.unity
+    guid: bd8b6607b7c856148827c0bdd382427f
   m_configObjects: {}
