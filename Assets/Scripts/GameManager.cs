@@ -78,6 +78,14 @@ public class GameManager : MonoBehaviour
     {
         quality = qualityScore;
         durability = durabilityScore;
+        if (durability < 0)
+        {
+            durability = 0;
+        }
+        if (quality < 0)
+        {
+            quality = 0;
+        }
     }
 
     void playerfeedback()

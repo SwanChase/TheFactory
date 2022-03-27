@@ -70,8 +70,6 @@ public class ShirtMinigameController : MonoBehaviour
             return;
         }
         AudioSetup();
-        StartCoroutine(IntervalCalc());
-        StartCoroutine(IntervalAudioCue());
 
         insideLine = seamLineCollision.IsGameObjectInTrigger(needle);
 
@@ -82,8 +80,9 @@ public class ShirtMinigameController : MonoBehaviour
         //if (inputFloat < 0) inputFloat = -1;
 
         shirtPosition.x -= Time.deltaTime * inputFloat * movementSpeed;
-        shirtPosition.y -= Time.deltaTime * sewingSpeed;
+        shirtPosition.x = Mathf.Clamp(shirtPosition.x, -12.35f, -11.13f);
 
+        shirtPosition.y -= Time.deltaTime * sewingSpeed;
         if (shirtPosition.y < -0.88f)
         {
             Debug.Log("MiniGame Done " + shirtPosition.y);
@@ -95,6 +94,8 @@ public class ShirtMinigameController : MonoBehaviour
         }
         qualityText.text = quality.ToString("0.0");
         shirt.position = shirtPosition;
+        StartCoroutine(IntervalCalc());
+
     }
 
     IEnumerator IntervalCalc()
@@ -104,7 +105,7 @@ public class ShirtMinigameController : MonoBehaviour
             yield return new WaitForSeconds(.5f);
             sewingInterval -= increaseSpeedAmount * Time.deltaTime / 10;
             yield return new WaitForSeconds(.5f);
-
+            StartCoroutine(IntervalAudioCue());
         }
     }
     IEnumerator IntervalAudioCue()
@@ -114,7 +115,7 @@ public class ShirtMinigameController : MonoBehaviour
             yield return new WaitForSeconds(sewingSpeed);
             //AkSoundEngine.PostEvent("Unsew", gameObject);
             //AkSoundEngine.PostEvent("Sew", gameObject);
-            Debug.Log(sewingSpeed);
+            //Debug.Log(sewingSpeed);
         }
     }
     private void AudioSetup()
