@@ -21,6 +21,11 @@ public class C_Menu : MonoBehaviour
 
     }
 
+    public void toMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 
 
 

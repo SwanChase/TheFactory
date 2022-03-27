@@ -97,6 +97,7 @@ public class GameManager : MonoBehaviour
 
             warDrobe.lowQuality();
         }
+        else ClothingDurabilityTextfield.color = new Color(49, 70, 70);
 
     }
 }
