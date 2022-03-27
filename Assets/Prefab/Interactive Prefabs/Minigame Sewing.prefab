@@ -825,13 +825,13 @@ MonoBehaviour:
   needle: {fileID: 2329336979055496407}
   camera2D: {fileID: 2329336978594745403}
   insideLine: 0
-  increaseSpeedAmount: 0.01
-  sewingSpeed: 0.05
+  increaseSpeedAmount: 0.1
+  sewingSpeed: 0.1
   movementSpeed: 1
   sewingInterval: 0.48
   qualityText: {fileID: 2329336978785925731}
-  increaseDamageAmount: 0.1
-  damageSpeed: 5
+  increaseDamageAmount: 4
+  damageSpeed: 15
 --- !u!1 &2329336979568029043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1000,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 1, g: 0.25882354, b: 0.25882354, a: 1}
+  m_Color: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1

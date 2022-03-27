@@ -6136,6 +6136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quality: 0
   durability: 0
+  playerskin: {fileID: 0}
+  newOutfit: {fileID: 0}
+  oldOutfit: {fileID: 0}
   onChanging:
     m_PersistentCalls:
       m_Calls:
@@ -6576,22 +6579,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: damageSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.size
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[5].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[6].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
       propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1752680162}
@@ -6616,49 +6603,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1296078519}
     - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[5].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[6].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
-      value: SetDurability
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
-      value: Play
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[5].m_TargetAssemblyTypeName
-      value: WarDrobe, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[6].m_TargetAssemblyTypeName
-      value: UnityEngine.ParticleSystem, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
       propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 197663498}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336978583077580, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
-      propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 2685543138402804364, guid: 91600664749e2b643ba519d825fc95a5, type: 3}
       propertyPath: m_Name
       value: Minigame Cutting
@@ -6980,22 +6927,6 @@ PrefabInstance:
     - target: {fileID: 2329336979380329084, guid: dbfe4431cc933ee4a8fcfc3ef5a0300c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336979380329085, guid: dbfe4431cc933ee4a8fcfc3ef5a0300c, type: 3}
-      propertyPath: damageSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336979380329085, guid: dbfe4431cc933ee4a8fcfc3ef5a0300c, type: 3}
-      propertyPath: sewingSpeed
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336979380329085, guid: dbfe4431cc933ee4a8fcfc3ef5a0300c, type: 3}
-      propertyPath: increaseSpeedAmount
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329336979380329085, guid: dbfe4431cc933ee4a8fcfc3ef5a0300c, type: 3}
-      propertyPath: increaseDamageAmount
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2329336979380329085, guid: dbfe4431cc933ee4a8fcfc3ef5a0300c, type: 3}
       propertyPath: onMiniGameFinished.m_PersistentCalls.m_Calls.Array.data[1].m_Target
