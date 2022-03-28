@@ -809,6 +809,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 63740717}
+    - target: {fileID: 1345642803989149644, guid: 22282edfd05157a428b03ff5dfea44ed, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    - target: {fileID: 1345642803989149644, guid: 22282edfd05157a428b03ff5dfea44ed, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    - target: {fileID: 1345642803989149645, guid: 22282edfd05157a428b03ff5dfea44ed, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.29999685
+      objectReference: {fileID: 0}
+    - target: {fileID: 1345642804205743427, guid: 22282edfd05157a428b03ff5dfea44ed, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    - target: {fileID: 1345642804205743427, guid: 22282edfd05157a428b03ff5dfea44ed, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    - target: {fileID: 1345642804205743428, guid: 22282edfd05157a428b03ff5dfea44ed, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.69999695
+      objectReference: {fileID: 0}
     - target: {fileID: 1345642804327094514, guid: 22282edfd05157a428b03ff5dfea44ed, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -909,5 +933,17 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2083383216}
+    - target: {fileID: 1345642804989213003, guid: 22282edfd05157a428b03ff5dfea44ed, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    - target: {fileID: 1345642804989213003, guid: 22282edfd05157a428b03ff5dfea44ed, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
+    - target: {fileID: 1345642804989213004, guid: 22282edfd05157a428b03ff5dfea44ed, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22282edfd05157a428b03ff5dfea44ed, type: 3}
