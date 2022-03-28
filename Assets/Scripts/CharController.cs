@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class CharController : MonoBehaviour
 {
+    public Animator animator;
 
     [SerializeField]
     float movespeed = 4; // Test
@@ -12,6 +13,7 @@ public class CharController : MonoBehaviour
 
     void Start()
     {
+
         CheckCameraPosition();
     }
 
@@ -21,10 +23,17 @@ public class CharController : MonoBehaviour
         {
             Move();
         }
+        else
+        {
+            animator.SetBool("Walking", false);
+        }
+
         if (Input.GetKeyDown(KeyCode.P))
         {
             CheckCameraPosition();
         }
+
+
     }
 
     void CheckCameraPosition()
@@ -37,6 +46,8 @@ public class CharController : MonoBehaviour
 
     void Move()
     {
+        animator.SetBool("Walking", true);
+
         Vector3 direction = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         Vector3 rightMovement = right * movespeed * Time.deltaTime * Input.GetAxis("Horizontal");
         Vector3 upMovement = forward * movespeed * Time.deltaTime * Input.GetAxis("Vertical");
@@ -46,8 +57,6 @@ public class CharController : MonoBehaviour
         transform.forward = Vector3.Lerp(transform.forward, heading, 0.1f);
         transform.position += rightMovement;
         transform.position += upMovement;
-
-
     }
 
     public void SetCanMove(bool i)

@@ -229,6 +229,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6063536169482471399, guid: 44fe0b04899d8934a90e7416966d7b78, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 284981266}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44fe0b04899d8934a90e7416966d7b78, type: 3}
 --- !u!4 &230367857 stripped
@@ -331,6 +335,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &284981266 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3149249198728098492, guid: 44fe0b04899d8934a90e7416966d7b78, type: 3}
+  m_PrefabInstance: {fileID: 222755011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &366288507 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8773394249944657163, guid: f85fbf565138ded47ace3bb90766981e, type: 3}
@@ -1274,6 +1283,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quality: 0
   durability: 0
+  playerskin: {fileID: 0}
+  newOutfit: {fileID: 0}
+  oldOutfit: {fileID: 0}
   onChanging:
     m_PersistentCalls:
       m_Calls:
