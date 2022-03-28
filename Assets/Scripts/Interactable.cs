@@ -11,7 +11,10 @@ public class Interactable : MonoBehaviour
 
     [SerializeField]
     Material normal, highlighted;
+
     Renderer rend;
+    [SerializeField]
+    Renderer TargetModel;
 
     [SerializeField]
     public UnityEvent onInteraction;
@@ -20,14 +23,19 @@ public class Interactable : MonoBehaviour
     {
         if (player!)
         {
-            Debug.LogWarning("something aint right fam check ya interactables");
+            Debug.LogWarning("something aint right fam check ya Player");
+        }
+        if (TargetModel!)
+        {
+            Debug.LogWarning("something aint right fam check ya Targetmodel");
         }
         if (needsCameraPos == true && camPos!)
         {
-            Debug.LogWarning("something aint right fam check ya interactable cam pos");
+            Debug.LogWarning("something aint right fam check ya cam pos");
         }
 
-        rend = GetComponent<Renderer>();
+        Debug.Log(normal);
+        //TargetModel.material=normal;
         HighLighting(normal);
 
         if (onInteraction == null)
@@ -51,20 +59,24 @@ public class Interactable : MonoBehaviour
 
         if (closeEnough && Input.GetKeyUp(KeyCode.E))
         {
-            Debug.Log("Hallo world");
+            HighLighting(normal);
             onInteraction.Invoke();
         }
-
     }
 
     public void HighLighting(Material mat)
     {
-        rend.material = mat;
+        TargetModel.material = mat;
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, range);
+    }
+
+    public void OutfitChange()
+    {
+
     }
 }
