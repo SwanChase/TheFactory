@@ -226,9 +226,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1008024233}
   - component: {fileID: 1008024232}
-  - component: {fileID: 1008024231}
   - component: {fileID: 1008024235}
   - component: {fileID: 1008024234}
+  - component: {fileID: 1008024236}
+  - component: {fileID: 1008024231}
   m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -236,14 +237,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1008024231
-AudioListener:
+--- !u!114 &1008024231
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008024230}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 583b24831871a234bbcba06a008029e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
 --- !u!20 &1008024232
 Camera:
   m_ObjectHideFlags: 0
@@ -378,6 +385,28 @@ MonoBehaviour:
   blendDistance: 0
   weight: 1
   priority: 0
+--- !u!114 &1008024236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008024230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eb9a807347f0194c953c04f4880dc7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1575744926
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,6 +759,62 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb0ddcf5731969d4ba8df636e59aead8, type: 3}
+--- !u!1 &1974788368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1974788370}
+  - component: {fileID: 1974788369}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1974788369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974788368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334e0ce6cbe4dfd45aced155c5865515, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 30c1021e4af9af848ba5f2c5cafec61b, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &1974788370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974788368}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1989741203 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3511333952471266377, guid: bb0ddcf5731969d4ba8df636e59aead8, type: 3}
@@ -748,7 +833,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movespeed: 4
-  canMove: 1
 --- !u!65 &1989741205
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -875,7 +959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3171193206343638446, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.36580643
+      value: -0.4781719
       objectReference: {fileID: 0}
     - target: {fileID: 3171193206343638446, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: m_ConnectedAnchor.z
@@ -975,7 +1059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8972614428923420369, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.36580643
+      value: -0.4781719
       objectReference: {fileID: 0}
     - target: {fileID: 8972614428923420369, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: m_ConnectedAnchor.z
