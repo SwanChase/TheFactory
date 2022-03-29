@@ -71,7 +71,12 @@ public class GameManager : MonoBehaviour
 
     public void EndScene()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Lose_Scene");
+    }
+
+    public void winScene()
+    {
+        SceneManager.LoadScene("Win_Scene");
     }
 
     public void SetNewShirt(int qualityScore, int durabilityScore)
@@ -93,9 +98,6 @@ public class GameManager : MonoBehaviour
         if (durability < 40)
         {
             ClothingDurabilityTextfield.color = Color.red;
-            print("red");
-
-            warDrobe.lowQuality();
         }
         else ClothingDurabilityTextfield.color = new Color(49, 70, 70);
 
