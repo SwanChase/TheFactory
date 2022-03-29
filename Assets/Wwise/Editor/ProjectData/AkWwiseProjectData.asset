@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8916c7156f7029478599df049b74bc09
     GuidInternal: 
-    m_lastTime: -8585546750726213787
+    m_lastTime: -8585530477936728846
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -54,6 +54,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Reverb
+      guid: 0e979eb55e562649a0c9270fa2792d13
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8916c7156f7029478599df049b74bc09
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Reverb
+        ObjectType: 1
+        guid: 0e979eb55e562649a0c9270fa2792d13
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -66,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 58b35ff4942d204b896fb5a236155aa1
     GuidInternal: 
-    m_lastTime: -8585537936375025106
+    m_lastTime: -8585530485937139965
     List:
     - name: Main
       guid: 38a12c25c30e3944a44c2611796e08a7
@@ -94,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7407ff416a69744e99d475f99a6ded15
     GuidInternal: 
-    m_lastTime: -8585535685095177798
+    m_lastTime: -8585530485737402058
     List:
     - name: Footstep
       guid: bdf02316fa3e52458efbddb39953783e
@@ -113,6 +130,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.6
       minDuration: 0.6
+    - name: Play_BGM
+      guid: 91ffc8cf188c0b4aa3d8aa3ffe26148f
+      id: 3126765036
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Play_BGM
+        ObjectType: 3
+        guid: 91ffc8cf188c0b4aa3d8aa3ffe26148f
+      Path: Events\Default Work Unit\Play_BGM
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Sew
       guid: 8627a356716b4c4eaaeab98cbb440116
       id: 376462276
@@ -130,6 +164,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.48
       minDuration: 0.48
+    - name: Stop_BGM
+      guid: 7ad8b17e4954cc45943a94e975b96360
+      id: 1073466678
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Stop_BGM
+        ObjectType: 3
+        guid: 7ad8b17e4954cc45943a94e975b96360
+      Path: Events\Default Work Unit\Stop_BGM
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: UI
       guid: 0a16aceb2200c04e8b772624b3027309
       id: 1551306167
@@ -167,26 +218,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.25
       minDuration: 0.25
-    - name: UI_Play_BGM
-      guid: 91ffc8cf188c0b4aa3d8aa3ffe26148f
-      id: 3641094483
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7407ff416a69744e99d475f99a6ded15
-      - ElementName: UI
-        ObjectType: 4
-        guid: 0a16aceb2200c04e8b772624b3027309
-      - ElementName: UI_Play_BGM
-        ObjectType: 3
-        guid: 91ffc8cf188c0b4aa3d8aa3ffe26148f
-      Path: Events\Default Work Unit\UI\UI_Play_BGM
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: UI_Select_Option
       guid: 65096286c6ba18458c311ceaa585f9ac
       id: 3364425874
@@ -323,7 +354,7 @@ MonoBehaviour:
     m_lastTime: -8585543264727911453
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000030000000400000006000000070000000a000000
+  ExpandedWaapiItemIds: 0600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
