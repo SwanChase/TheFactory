@@ -14,9 +14,10 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID PLAY_BGM = 3126765036U;
         static const AkUniqueID SEW = 376462276U;
+        static const AkUniqueID STOP_BGM = 1073466678U;
         static const AkUniqueID UI_CLICK_OPTION = 3276074U;
-        static const AkUniqueID UI_PLAY_BGM = 3641094483U;
         static const AkUniqueID UI_SELECT_OPTION = 3364425874U;
         static const AkUniqueID UNSEW = 2002818179U;
     } // namespace EVENTS
@@ -38,6 +39,11 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID REVERB = 348963605U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
