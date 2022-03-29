@@ -1,10 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
 	3276074	UI_Click_Option			\Default Work Unit\UI\UI_Click_Option	
 	376462276	Sew			\Default Work Unit\Sew	
+	1073466678	Stop_BGM			\Default Work Unit\Stop_BGM	
 	1866025847	Footstep			\Default Work Unit\Footstep	
 	2002818179	Unsew			\Default Work Unit\Unsew	
+	3126765036	Play_BGM			\Default Work Unit\Play_BGM	
 	3364425874	UI_Select_Option			\Default Work Unit\UI\UI_Select_Option	
-	3641094483	UI_Play_BGM			\Default Work Unit\UI\UI_Play_BGM	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2851447356	Sewing_Speed			\Default Work Unit\Sewing_Speed	
@@ -16,7 +17,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	107027884	SEW_SFX_Sewing_Machine_480ms_1	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\SEW_SFX_Sewing_Machine_480ms_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sewing_Machine\480ms\SEW_SFX_Sewing_Machine_480ms_1		46144
 	110480606	Clean_Cut_3	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\Clean_Cut_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Scissor_Cuts\Level_1\Clean_Cut_3		120144
 	118793406	SEW_SFX_Sewing_Machine_333ms_1	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\SEW_SFX_Sewing_Machine_333ms_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sewing_Machine\333ms\SEW_SFX_Sewing_Machine_333ms_1		32064
-	131441736	SEW_BGM_Main_Menu	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\SEW_BGM_Main_Menu_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SEW_BGM_Main_Menu		5266428
 	231654250	SEW_SFX_Sewing_Machine_283ms_3	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\SEW_SFX_Sewing_Machine_283ms_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sewing_Machine\283ms\SEW_SFX_Sewing_Machine_283ms_3		27234
 	262127714	SEW_SFX_Sewing_Machine_395ms_5	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\SEW_SFX_Sewing_Machine_395ms_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sewing_Machine\395ms\SEW_SFX_Sewing_Machine_395ms_5		37958
 	319448237	SEW_SFX_Sewing_Machine_395ms_2	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\SEW_SFX_Sewing_Machine_395ms_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sewing_Machine\395ms\SEW_SFX_Sewing_Machine_395ms_2		37958
@@ -52,6 +52,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	865559112	SEW_SFX_Footstep_5	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\SEW_SFX_Footstep_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\SEW_SFX_Footstep_5		57664
 	867293164	SEW_SFX_Sewing_Machine_480ms_4	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\SEW_SFX_Sewing_Machine_480ms_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sewing_Machine\480ms\SEW_SFX_Sewing_Machine_480ms_4		46144
 	868701907	SEW_SFX_Sewing_Machine_155ms_5	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\SEW_SFX_Sewing_Machine_155ms_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sewing_Machine\155ms\SEW_SFX_Sewing_Machine_155ms_5		14908
+	878214134	Radio_Sew	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\Radio_Sew_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Radio_Sew		26331572
 	887088279	SEW_SFX_Sewing_Machine_173ms_2	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\SEW_SFX_Sewing_Machine_173ms_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sewing_Machine\173ms\SEW_SFX_Sewing_Machine_173ms_2		16712
 	915123344	SEW_SFX_Sewing_Machine_155ms_2	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\SEW_SFX_Sewing_Machine_155ms_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sewing_Machine\155ms\SEW_SFX_Sewing_Machine_155ms_2		14910
 	938031839	SEW_SFX_Sewing_Machine_333ms_5	C:\Users\maxjo\Documents\WwiseProjects\Wwise_Sewed_Up\.cache\Windows\SFX\SEW_SFX_Sewing_Machine_333ms_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sewing_Machine\333ms\SEW_SFX_Sewing_Machine_333ms_5		32064

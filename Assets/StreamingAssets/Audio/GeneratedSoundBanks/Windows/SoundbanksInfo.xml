@@ -11,12 +11,15 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="166759832">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3463805003">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3317030786">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1787557053">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -48,6 +51,20 @@
 							<Path>SFX\SEW_SFX_Footstep_5_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="3126765036" Name="Play_BGM" ObjectPath="\Events\Default Work Unit\Play_BGM">
+					<IncludedMemoryFiles>
+						<File Id="878214134" Language="SFX">
+							<ShortName>Radio_Sew.wav</ShortName>
+							<Path>SFX\Radio_Sew_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="348963605" Name="Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="376462276" Name="Sew" ObjectPath="\Events\Default Work Unit\Sew">
 					<IncludedMemoryFiles>
@@ -193,19 +210,12 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1073466678" Name="Stop_BGM" ObjectPath="\Events\Default Work Unit\Stop_BGM"/>
 				<Event Id="3276074" Name="UI_Click_Option" ObjectPath="\Events\Default Work Unit\UI\UI_Click_Option">
 					<IncludedMemoryFiles>
 						<File Id="773379722" Language="SFX">
 							<ShortName>SEW_SFX_UI_Click_Option.wav</ShortName>
 							<Path>SFX\SEW_SFX_UI_Click_Option_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3641094483" Name="UI_Play_BGM" ObjectPath="\Events\Default Work Unit\UI\UI_Play_BGM">
-					<IncludedMemoryFiles>
-						<File Id="131441736" Language="SFX">
-							<ShortName>SEW_BGM_Main_Menu.wav</ShortName>
-							<Path>SFX\SEW_BGM_Main_Menu_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -239,10 +249,6 @@
 				<File Id="118793406" Language="SFX">
 					<ShortName>SEW_SFX_Sewing_Machine_333ms_1.wav</ShortName>
 					<Path>SFX\SEW_SFX_Sewing_Machine_333ms_1_10C4C929.wem</Path>
-				</File>
-				<File Id="131441736" Language="SFX">
-					<ShortName>SEW_BGM_Main_Menu.wav</ShortName>
-					<Path>SFX\SEW_BGM_Main_Menu_D79FB2B7.wem</Path>
 				</File>
 				<File Id="231654250" Language="SFX">
 					<ShortName>SEW_SFX_Sewing_Machine_283ms_3.wav</ShortName>
@@ -383,6 +389,10 @@
 				<File Id="868701907" Language="SFX">
 					<ShortName>SEW_SFX_Sewing_Machine_155ms_5.wav</ShortName>
 					<Path>SFX\SEW_SFX_Sewing_Machine_155ms_5_10C4C929.wem</Path>
+				</File>
+				<File Id="878214134" Language="SFX">
+					<ShortName>Radio_Sew.wav</ShortName>
+					<Path>SFX\Radio_Sew_D79FB2B7.wem</Path>
 				</File>
 				<File Id="887088279" Language="SFX">
 					<ShortName>SEW_SFX_Sewing_Machine_173ms_2.wav</ShortName>
