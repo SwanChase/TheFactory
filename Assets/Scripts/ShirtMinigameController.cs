@@ -55,7 +55,7 @@ public class ShirtMinigameController : MonoBehaviour
     }
     private void Awake()
     {
-        AudioSetup();
+        
     }
 
     private void FixedUpdate()
@@ -121,6 +121,7 @@ public class ShirtMinigameController : MonoBehaviour
                 sewingInterval -= increaseSpeedAmount * Time.deltaTime / 10;
             }
             yield return new WaitForSeconds(.5f);
+            AudioSetup();
         }
     }
     IEnumerator IntervalAudioCue()
@@ -129,7 +130,7 @@ public class ShirtMinigameController : MonoBehaviour
         {
             yield return new WaitForSeconds(sewingInterval);
             AkSoundEngine.PostEvent("Unsew", gameObject);
-            yield return new WaitForSeconds(sewingInterval);
+            //yield return new WaitForSeconds(sewingInterval);
             AkSoundEngine.PostEvent("Sew", gameObject);
             Debug.Log("Sewing interval: "+sewingInterval);
         }
