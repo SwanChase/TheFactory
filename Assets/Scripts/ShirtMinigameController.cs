@@ -99,6 +99,7 @@ public class ShirtMinigameController : MonoBehaviour
         }
         if (quality <= 0)
         {
+            onMiniGameFinished.Invoke(((int)quality));
             ResetMinigame();
         }
         qualityText.text = quality.ToString("0.0");

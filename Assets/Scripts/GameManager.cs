@@ -7,8 +7,8 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public WarDrobe warDrobe;
-    private float roomTemperature = 23f;
-    private float bodyTemperature = 37f;
+    [SerializeField]private float roomTemperature = 23f;
+    [SerializeField] private float bodyTemperature = 37f;
     private float quality = 10f;
     public float durability = 100;
 
@@ -53,8 +53,7 @@ public class GameManager : MonoBehaviour
         if (durability <= 0)
         {
             durability += roomTemperature * ((110 - quality) / 1000) * Time.deltaTime;
-            bodyTemperature -= roomTemperature / 1000 * Time.deltaTime; //player health = body temp (temp) 
-
+            bodyTemperature -= roomTemperature / 350 * Time.deltaTime; //player health = body temp (temp) 
         }
 
         if (bodyTemperature < 35f)

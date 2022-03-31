@@ -56,11 +56,14 @@ public class CuttingMinigameController : MonoBehaviour
         {
             onMiniGameFinished = new UnityEvent<int>();
         }
-        //lineController = lineController;
+        nodes = new List<Transform>();
+        //nodes = lineController.NodesList;
         //nodes = lineNodes.NodesList;
-        foreach (Transform node in nodes)
+        foreach (Transform nodeSingleTransform in nodes)
         {
-
+            LineNode singleNode = nodeSingleTransform.GetComponent<LineNode>();
+            singleNode.SetTrackNodes(this);
+            //nodes.Add(n)
         }
         startingPosition = shirt.position;
         startingPositionSciccors = scissors.transform.position;
@@ -101,6 +104,11 @@ public class CuttingMinigameController : MonoBehaviour
         }
         qualityText.text = "Durability: "+ durability.ToString("0.0");
         shirt.position = shirtPosition;
+    }
+
+    public void PlayerThroughNode(LineNode lineNode)
+    {
+
     }
 
     public void FinishedMiniGame()
