@@ -5,6 +5,7 @@ public class Interactable : MonoBehaviour
 {
     public bool hasAudioEvent = false;
     public string audioEventName;
+    [SerializeField] private GameObject audioSpeaker;
 
     [SerializeField]
     public float range;
@@ -24,6 +25,10 @@ public class Interactable : MonoBehaviour
 
     private void Start()
     {
+        if (audioSpeaker == null||hasAudioEvent) 
+        {
+            audioSpeaker = gameObject.GetComponentInParent<GameObject>();
+        }
         if (player!)
         {
             Debug.LogWarning("something aint right fam check ya Player");
@@ -64,7 +69,7 @@ public class Interactable : MonoBehaviour
         {
             HighLighting(normal);
             onInteraction.Invoke();
-            if (hasAudioEvent)
+            if (hasAudioEvent|| audioSpeaker)
             {
                 StartAudio();
             }
@@ -73,7 +78,7 @@ public class Interactable : MonoBehaviour
     
     public void StartAudio()
     {
-        AkSoundEngine.PostEvent(audioEventName, gameObject);
+        AkSoundEngine.PostEvent(audioEventName, audioSpeaker);
     }
 
     public void HighLighting(Material mat)
