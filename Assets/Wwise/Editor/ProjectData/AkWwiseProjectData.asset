@@ -111,8 +111,48 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7407ff416a69744e99d475f99a6ded15
     GuidInternal: 
-    m_lastTime: -8585530485737402058
+    m_lastTime: -8585528772516619564
     List:
+    - name: Fireplace_Start
+      guid: f4ffc83d1790ac4db7694fb9d95122a7
+      id: 178083583
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Win_Animation
+        ObjectType: 4
+        guid: addceece59936f4f927111fc7a308b72
+      - ElementName: Fireplace_Start
+        ObjectType: 3
+        guid: f4ffc83d1790ac4db7694fb9d95122a7
+      Path: Events\Default Work Unit\Win_Animation\Fireplace_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fireplace_Stop
+      guid: 709ad02732337e43bf746b595c9b018b
+      id: 3119796037
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Win_Animation
+        ObjectType: 4
+        guid: addceece59936f4f927111fc7a308b72
+      - ElementName: Fireplace_Stop
+        ObjectType: 3
+        guid: 709ad02732337e43bf746b595c9b018b
+      Path: Events\Default Work Unit\Win_Animation\Fireplace_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Footstep
       guid: bdf02316fa3e52458efbddb39953783e
       id: 1866025847
@@ -130,6 +170,123 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.6
       minDuration: 0.6
+    - name: Grab_Clothing
+      guid: c2fdf9a3ffa9254db96db90c1fb243ed
+      id: 2208075590
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Interactibles
+        ObjectType: 4
+        guid: b52060bab6026640a052f1e53b5845bf
+      - ElementName: Grab_Clothing
+        ObjectType: 3
+        guid: c2fdf9a3ffa9254db96db90c1fb243ed
+      Path: Events\Default Work Unit\Interactibles\Grab_Clothing
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Hamer_Stop
+      guid: 7698f330fab50348bb1ae7d920542770
+      id: 3370687727
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Win_Animation
+        ObjectType: 4
+        guid: addceece59936f4f927111fc7a308b72
+      - ElementName: Hamer_Stop
+        ObjectType: 3
+        guid: 7698f330fab50348bb1ae7d920542770
+      Path: Events\Default Work Unit\Win_Animation\Hamer_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Hammer_Start
+      guid: c6c5956f6809474797ed7be1c245882a
+      id: 3650021186
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Win_Animation
+        ObjectType: 4
+        guid: addceece59936f4f927111fc7a308b72
+      - ElementName: Hammer_Start
+        ObjectType: 3
+        guid: c6c5956f6809474797ed7be1c245882a
+      Path: Events\Default Work Unit\Win_Animation\Hammer_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Interactibles
+      guid: b52060bab6026640a052f1e53b5845bf
+      id: 2987141838
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Interactibles
+        ObjectType: 4
+        guid: b52060bab6026640a052f1e53b5845bf
+      Path: Events\Default Work Unit\Interactibles
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Open_Locker
+      guid: 0a9812699470fc4cb479e5879bf6d893
+      id: 2204270632
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Interactibles
+        ObjectType: 4
+        guid: b52060bab6026640a052f1e53b5845bf
+      - ElementName: Open_Locker
+        ObjectType: 3
+        guid: 0a9812699470fc4cb479e5879bf6d893
+      Path: Events\Default Work Unit\Interactibles\Open_Locker
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Open_Menu
+      guid: 2cecbcbaf3416e4098448c787156e2a0
+      id: 2747536169
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Interactibles
+        ObjectType: 4
+        guid: b52060bab6026640a052f1e53b5845bf
+      - ElementName: Open_Menu
+        ObjectType: 3
+        guid: 2cecbcbaf3416e4098448c787156e2a0
+      Path: Events\Default Work Unit\Interactibles\Open_Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_BGM
       guid: 91ffc8cf188c0b4aa3d8aa3ffe26148f
       id: 3126765036
@@ -164,6 +321,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.48
       minDuration: 0.48
+    - name: Start_Cutting
+      guid: 1c552f0165a1f346ad6ae9afb4050ab5
+      id: 1343207550
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Interactibles
+        ObjectType: 4
+        guid: b52060bab6026640a052f1e53b5845bf
+      - ElementName: Start_Cutting
+        ObjectType: 3
+        guid: 1c552f0165a1f346ad6ae9afb4050ab5
+      Path: Events\Default Work Unit\Interactibles\Start_Cutting
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Start_Sewing
+      guid: b50fcf06cb968b4e9c5320f6bccadac1
+      id: 173461415
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Interactibles
+        ObjectType: 4
+        guid: b52060bab6026640a052f1e53b5845bf
+      - ElementName: Start_Sewing
+        ObjectType: 3
+        guid: b50fcf06cb968b4e9c5320f6bccadac1
+      Path: Events\Default Work Unit\Interactibles\Start_Sewing
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_BGM
       guid: 7ad8b17e4954cc45943a94e975b96360
       id: 1073466678
@@ -181,6 +378,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Talking_Start
+      guid: cda7093c8b2a7a44b3c6b228ff0433c6
+      id: 624453912
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Win_Animation
+        ObjectType: 4
+        guid: addceece59936f4f927111fc7a308b72
+      - ElementName: Talking_Start
+        ObjectType: 3
+        guid: cda7093c8b2a7a44b3c6b228ff0433c6
+      Path: Events\Default Work Unit\Win_Animation\Talking_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Talking_Stop
+      guid: 4aae51e3927db543a5bc58a5eb1b0f47
+      id: 687379364
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Win_Animation
+        ObjectType: 4
+        guid: addceece59936f4f927111fc7a308b72
+      - ElementName: Talking_Stop
+        ObjectType: 3
+        guid: 4aae51e3927db543a5bc58a5eb1b0f47
+      Path: Events\Default Work Unit\Win_Animation\Talking_Stop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: UI
       guid: 0a16aceb2200c04e8b772624b3027309
       id: 1551306167
@@ -255,6 +492,63 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Win_Animation
+      guid: addceece59936f4f927111fc7a308b72
+      id: 2288078002
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Win_Animation
+        ObjectType: 4
+        guid: addceece59936f4f927111fc7a308b72
+      Path: Events\Default Work Unit\Win_Animation
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: You_Lost
+      guid: 39ec65e4ea8df84199e387fc7210762f
+      id: 2017585987
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Interactibles
+        ObjectType: 4
+        guid: b52060bab6026640a052f1e53b5845bf
+      - ElementName: You_Lost
+        ObjectType: 3
+        guid: 39ec65e4ea8df84199e387fc7210762f
+      Path: Events\Default Work Unit\Interactibles\You_Lost
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: You_Won
+      guid: 80f0ee88e78d48488eba192eb3fa0b2c
+      id: 723260527
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Interactibles
+        ObjectType: 4
+        guid: b52060bab6026640a052f1e53b5845bf
+      - ElementName: You_Won
+        ObjectType: 3
+        guid: 80f0ee88e78d48488eba192eb3fa0b2c
+      Path: Events\Default Work Unit\Interactibles\You_Won
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
