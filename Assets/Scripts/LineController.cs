@@ -21,6 +21,7 @@ public class LineController : MonoBehaviour
     {
         lr = GetComponent<LineRenderer>();
         lr.positionCount = nodes.Count;
+
     }
 
     // Update is called once per frame
