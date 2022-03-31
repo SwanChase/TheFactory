@@ -13,7 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID CLOSE_LOCKER = 1966486454U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID GRAB_CLOTHING = 2208075590U;
         static const AkUniqueID PLAY_BGM = 3126765036U;
         static const AkUniqueID SEW = 376462276U;
         static const AkUniqueID STOP_BGM = 1073466678U;

@@ -1588,7 +1588,7 @@ PrefabInstance:
       objectReference: {fileID: 1491035205}
     - target: {fileID: 1131671312, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: hasAudioEvent
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1131671312, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: audioEventName
@@ -1616,7 +1616,7 @@ PrefabInstance:
       objectReference: {fileID: 1491035205}
     - target: {fileID: 1295078215, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: hasAudioEvent
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1295078215, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: audioEventName
@@ -1687,8 +1687,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1491035205}
     - target: {fileID: 1578033515, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
+      propertyPath: hasAudioEvent
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578033515, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: audioEventName
-      value: Open_Locker
+      value: Close_Locker
       objectReference: {fileID: 0}
     - target: {fileID: 1578033515, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: onInteraction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1708,7 +1712,7 @@ PrefabInstance:
       objectReference: {fileID: 1491035205}
     - target: {fileID: 2107543052, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: hasAudioEvent
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2107543052, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: audioEventName
