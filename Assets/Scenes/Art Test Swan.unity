@@ -1616,7 +1616,7 @@ PrefabInstance:
       objectReference: {fileID: 1491035205}
     - target: {fileID: 1295078215, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: hasAudioEvent
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1295078215, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: audioEventName
