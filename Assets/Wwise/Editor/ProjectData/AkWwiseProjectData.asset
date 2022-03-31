@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 58b35ff4942d204b896fb5a236155aa1
     GuidInternal: 
-    m_lastTime: -8585530466428068825
+    m_lastTime: -8585528666254830216
     List:
     - name: Main
       guid: 38a12c25c30e3944a44c2611796e08a7
@@ -111,7 +111,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7407ff416a69744e99d475f99a6ded15
     GuidInternal: 
-    m_lastTime: -8585528727979674304
+    m_lastTime: -8585528657082253789
     List:
     - name: Close_Locker
       guid: 0a9812699470fc4cb479e5879bf6d893
@@ -151,8 +151,8 @@ MonoBehaviour:
         guid: f4ffc83d1790ac4db7694fb9d95122a7
       Path: Events\Default Work Unit\Win_Animation\Fireplace_Start
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Fireplace_Stop
       guid: 709ad02732337e43bf746b595c9b018b
       id: 3119796037
@@ -171,8 +171,8 @@ MonoBehaviour:
         guid: 709ad02732337e43bf746b595c9b018b
       Path: Events\Default Work Unit\Win_Animation\Fireplace_Stop
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Footstep
       guid: bdf02316fa3e52458efbddb39953783e
       id: 1866025847
@@ -228,8 +228,8 @@ MonoBehaviour:
         guid: 7698f330fab50348bb1ae7d920542770
       Path: Events\Default Work Unit\Win_Animation\Hamer_Stop
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Hammer_Start
       guid: c6c5956f6809474797ed7be1c245882a
       id: 3650021186
@@ -248,8 +248,8 @@ MonoBehaviour:
         guid: c6c5956f6809474797ed7be1c245882a
       Path: Events\Default Work Unit\Win_Animation\Hammer_Start
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Interactibles
       guid: b52060bab6026640a052f1e53b5845bf
       id: 2987141838
@@ -285,8 +285,8 @@ MonoBehaviour:
         guid: 2cecbcbaf3416e4098448c787156e2a0
       Path: Events\Default Work Unit\Interactibles\Open_Menu
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Play_BGM
       guid: 91ffc8cf188c0b4aa3d8aa3ffe26148f
       id: 3126765036
@@ -339,8 +339,8 @@ MonoBehaviour:
         guid: 1c552f0165a1f346ad6ae9afb4050ab5
       Path: Events\Default Work Unit\Interactibles\Start_Cutting
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Start_Sewing
       guid: b50fcf06cb968b4e9c5320f6bccadac1
       id: 173461415
@@ -359,8 +359,8 @@ MonoBehaviour:
         guid: b50fcf06cb968b4e9c5320f6bccadac1
       Path: Events\Default Work Unit\Interactibles\Start_Sewing
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.5
+      minDuration: 1.25
     - name: Stop_BGM
       guid: 7ad8b17e4954cc45943a94e975b96360
       id: 1073466678
@@ -396,8 +396,8 @@ MonoBehaviour:
         guid: cda7093c8b2a7a44b3c6b228ff0433c6
       Path: Events\Default Work Unit\Win_Animation\Talking_Start
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Talking_Stop
       guid: 4aae51e3927db543a5bc58a5eb1b0f47
       id: 687379364
@@ -416,8 +416,8 @@ MonoBehaviour:
         guid: 4aae51e3927db543a5bc58a5eb1b0f47
       Path: Events\Default Work Unit\Win_Animation\Talking_Stop
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: UI
       guid: 0a16aceb2200c04e8b772624b3027309
       id: 1551306167
@@ -527,8 +527,8 @@ MonoBehaviour:
         guid: 39ec65e4ea8df84199e387fc7210762f
       Path: Events\Default Work Unit\Interactibles\You_Lost
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: You_Won
       guid: 80f0ee88e78d48488eba192eb3fa0b2c
       id: 723260527
@@ -547,8 +547,8 @@ MonoBehaviour:
         guid: 80f0ee88e78d48488eba192eb3fa0b2c
       Path: Events\Default Work Unit\Interactibles\You_Won
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

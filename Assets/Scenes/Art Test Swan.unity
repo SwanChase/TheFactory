@@ -1591,7 +1591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 688268592, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: audioEventName
-      value: Sew
+      value: Grab_Clothing
       objectReference: {fileID: 0}
     - target: {fileID: 688268592, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: onInteraction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1647,7 +1647,7 @@ PrefabInstance:
       objectReference: {fileID: 1491035205}
     - target: {fileID: 1295078215, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: hasAudioEvent
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1295078215, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: audioEventName
@@ -1719,7 +1719,7 @@ PrefabInstance:
       objectReference: {fileID: 1491035205}
     - target: {fileID: 1578033515, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: hasAudioEvent
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1578033515, guid: d4ea24d1fb81cc54b87045927f808bcd, type: 3}
       propertyPath: audioEventName
