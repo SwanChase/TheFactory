@@ -27,7 +27,7 @@ public class Interactable : MonoBehaviour
     {
         if (audioSpeaker == null||hasAudioEvent) 
         {
-            audioSpeaker = gameObject.GetComponentInParent<GameObject>();
+            audioSpeaker = gameObject.transform.parent.gameObject;
         }
         if (player!)
         {

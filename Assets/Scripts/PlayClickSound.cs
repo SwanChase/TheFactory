@@ -9,5 +9,4 @@ public class PlayClickSound : MonoBehaviour
     {
         AkSoundEngine.PostEvent("UI_Click_Option", gameObject);
     }
-
 }

@@ -9,7 +9,9 @@ public class CuttingMinigameController : MonoBehaviour
     private bool minigameRunning = false;
     private GameManager clothQuality = new GameManager();
     private LineController lineNodes = new LineController();
-    [SerializeField] List<Transform> nodes;
+    [SerializeField] private List<Transform> nodes;
+
+    public LineController lineController;
 
     public bool MinigameRunning
     {
@@ -54,6 +56,7 @@ public class CuttingMinigameController : MonoBehaviour
         {
             onMiniGameFinished = new UnityEvent<int>();
         }
+        //lineController = lineController;
         //nodes = lineNodes.NodesList;
         foreach (Transform node in nodes)
         {
@@ -125,7 +128,7 @@ public class CuttingMinigameController : MonoBehaviour
     }
     public void DecreaseShirtDurabilityHigh()
     {
-        durability = durability - 50;
+        durability = durability - 90;
     }
 
     public void ResetMinigame()
