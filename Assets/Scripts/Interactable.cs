@@ -3,6 +3,9 @@ using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
 {
+    public bool hasAudioEvent = false;
+    public string audioEventName;
+
     [SerializeField]
     public float range;
     bool closeEnough, needsCameraPos = false;
@@ -61,7 +64,16 @@ public class Interactable : MonoBehaviour
         {
             HighLighting(normal);
             onInteraction.Invoke();
+            if (hasAudioEvent)
+            {
+                StartAudio();
+            }
         }
+    }
+    
+    public void StartAudio()
+    {
+        AkSoundEngine.PostEvent(audioEventName, gameObject);
     }
 
     public void HighLighting(Material mat)

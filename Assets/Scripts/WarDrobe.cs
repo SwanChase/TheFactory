@@ -36,7 +36,7 @@ public class WarDrobe : MonoBehaviour
     public void FreshChange()
     {
         onChanging.Invoke(quality, durability);
-        
+        //AUDIO INSTANCE FOR USING THE LOCKER
     }
     public void SetQuality(int newQuality)
     {
