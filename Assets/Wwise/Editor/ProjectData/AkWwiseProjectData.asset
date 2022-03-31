@@ -111,8 +111,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7407ff416a69744e99d475f99a6ded15
     GuidInternal: 
-    m_lastTime: -8585528772516619564
+    m_lastTime: -8585528727979674304
     List:
+    - name: Close_Locker
+      guid: 0a9812699470fc4cb479e5879bf6d893
+      id: 1966486454
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Interactibles
+        ObjectType: 4
+        guid: b52060bab6026640a052f1e53b5845bf
+      - ElementName: Close_Locker
+        ObjectType: 3
+        guid: 0a9812699470fc4cb479e5879bf6d893
+      Path: Events\Default Work Unit\Interactibles\Close_Locker
+      maxAttenuation: 0
+      maxDuration: 0.75
+      minDuration: 0.75
     - name: Fireplace_Start
       guid: f4ffc83d1790ac4db7694fb9d95122a7
       id: 178083583
@@ -188,8 +208,8 @@ MonoBehaviour:
         guid: c2fdf9a3ffa9254db96db90c1fb243ed
       Path: Events\Default Work Unit\Interactibles\Grab_Clothing
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1
+      minDuration: 1
     - name: Hamer_Stop
       guid: 7698f330fab50348bb1ae7d920542770
       id: 3370687727
@@ -244,26 +264,6 @@ MonoBehaviour:
         ObjectType: 4
         guid: b52060bab6026640a052f1e53b5845bf
       Path: Events\Default Work Unit\Interactibles
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Open_Locker
-      guid: 0a9812699470fc4cb479e5879bf6d893
-      id: 2204270632
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7407ff416a69744e99d475f99a6ded15
-      - ElementName: Interactibles
-        ObjectType: 4
-        guid: b52060bab6026640a052f1e53b5845bf
-      - ElementName: Open_Locker
-        ObjectType: 3
-        guid: 0a9812699470fc4cb479e5879bf6d893
-      Path: Events\Default Work Unit\Interactibles\Open_Locker
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
