@@ -13,15 +13,26 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID ANIMATION_1 = 3905450665U;
+        static const AkUniqueID ANIMATION_2 = 3905450666U;
+        static const AkUniqueID ANIMATION_3 = 3905450667U;
+        static const AkUniqueID ATMOSPHERE = 2145253833U;
         static const AkUniqueID CLOSE_LOCKER = 1966486454U;
+        static const AkUniqueID CUT = 647463975U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID GRAB_CLOTHING = 2208075590U;
+        static const AkUniqueID OPEN_MENU = 2747536169U;
         static const AkUniqueID PLAY_BGM = 3126765036U;
         static const AkUniqueID SEW = 376462276U;
+        static const AkUniqueID START_CUTTING = 1343207550U;
+        static const AkUniqueID START_SEWING = 173461415U;
+        static const AkUniqueID STOP_ATMOSPHERE = 824189664U;
         static const AkUniqueID STOP_BGM = 1073466678U;
         static const AkUniqueID UI_CLICK_OPTION = 3276074U;
         static const AkUniqueID UI_SELECT_OPTION = 3364425874U;
         static const AkUniqueID UNSEW = 2002818179U;
+        static const AkUniqueID YOU_LOST = 2017585987U;
+        static const AkUniqueID YOU_WON = 723260527U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

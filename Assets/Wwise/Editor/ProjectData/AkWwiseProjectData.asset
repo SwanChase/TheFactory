@@ -83,7 +83,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 58b35ff4942d204b896fb5a236155aa1
     GuidInternal: 
-    m_lastTime: -8585528666254830216
+    m_lastTime: -8585528426559535889
     List:
     - name: Main
       guid: 38a12c25c30e3944a44c2611796e08a7
@@ -111,8 +111,85 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7407ff416a69744e99d475f99a6ded15
     GuidInternal: 
-    m_lastTime: -8585528657082253789
+    m_lastTime: -8585528426559456119
     List:
+    - name: Animation_1
+      guid: 5561739c650a1545830ac96705dff7ff
+      id: 3905450665
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Win_Animation
+        ObjectType: 4
+        guid: addceece59936f4f927111fc7a308b72
+      - ElementName: Animation_1
+        ObjectType: 3
+        guid: 5561739c650a1545830ac96705dff7ff
+      Path: Events\Default Work Unit\Win_Animation\Animation_1
+      maxAttenuation: 0
+      maxDuration: 6.015364
+      minDuration: 6.015364
+    - name: Animation_2
+      guid: c63f4238a66db84e97b98ea1ef9e0805
+      id: 3905450666
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Win_Animation
+        ObjectType: 4
+        guid: addceece59936f4f927111fc7a308b72
+      - ElementName: Animation_2
+        ObjectType: 3
+        guid: c63f4238a66db84e97b98ea1ef9e0805
+      Path: Events\Default Work Unit\Win_Animation\Animation_2
+      maxAttenuation: 0
+      maxDuration: 6.008134
+      minDuration: 6.008134
+    - name: Animation_3
+      guid: 67b42cc69a0f5044ac2890c3664caaf2
+      id: 3905450667
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Win_Animation
+        ObjectType: 4
+        guid: addceece59936f4f927111fc7a308b72
+      - ElementName: Animation_3
+        ObjectType: 3
+        guid: 67b42cc69a0f5044ac2890c3664caaf2
+      Path: Events\Default Work Unit\Win_Animation\Animation_3
+      maxAttenuation: 0
+      maxDuration: 10
+      minDuration: 10
+    - name: Atmosphere
+      guid: b439da52755da84aa7de099d5093f5ae
+      id: 2145253833
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Atmosphere
+        ObjectType: 3
+        guid: b439da52755da84aa7de099d5093f5ae
+      Path: Events\Default Work Unit\Atmosphere
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Close_Locker
       guid: 0a9812699470fc4cb479e5879bf6d893
       id: 1966486454
@@ -133,9 +210,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.75
       minDuration: 0.75
-    - name: Fireplace_Start
-      guid: f4ffc83d1790ac4db7694fb9d95122a7
-      id: 178083583
+    - name: Cut
+      guid: d6b058a44d2f0943a20cb05de1733e02
+      id: 647463975
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -143,36 +220,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 7407ff416a69744e99d475f99a6ded15
-      - ElementName: Win_Animation
-        ObjectType: 4
-        guid: addceece59936f4f927111fc7a308b72
-      - ElementName: Fireplace_Start
+      - ElementName: Cut
         ObjectType: 3
-        guid: f4ffc83d1790ac4db7694fb9d95122a7
-      Path: Events\Default Work Unit\Win_Animation\Fireplace_Start
+        guid: d6b058a44d2f0943a20cb05de1733e02
+      Path: Events\Default Work Unit\Cut
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Fireplace_Stop
-      guid: 709ad02732337e43bf746b595c9b018b
-      id: 3119796037
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7407ff416a69744e99d475f99a6ded15
-      - ElementName: Win_Animation
-        ObjectType: 4
-        guid: addceece59936f4f927111fc7a308b72
-      - ElementName: Fireplace_Stop
-        ObjectType: 3
-        guid: 709ad02732337e43bf746b595c9b018b
-      Path: Events\Default Work Unit\Win_Animation\Fireplace_Stop
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.625
+      minDuration: 0.625
     - name: Footstep
       guid: bdf02316fa3e52458efbddb39953783e
       id: 1866025847
@@ -210,46 +264,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1
       minDuration: 1
-    - name: Hamer_Stop
-      guid: 7698f330fab50348bb1ae7d920542770
-      id: 3370687727
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7407ff416a69744e99d475f99a6ded15
-      - ElementName: Win_Animation
-        ObjectType: 4
-        guid: addceece59936f4f927111fc7a308b72
-      - ElementName: Hamer_Stop
-        ObjectType: 3
-        guid: 7698f330fab50348bb1ae7d920542770
-      Path: Events\Default Work Unit\Win_Animation\Hamer_Stop
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Hammer_Start
-      guid: c6c5956f6809474797ed7be1c245882a
-      id: 3650021186
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7407ff416a69744e99d475f99a6ded15
-      - ElementName: Win_Animation
-        ObjectType: 4
-        guid: addceece59936f4f927111fc7a308b72
-      - ElementName: Hammer_Start
-        ObjectType: 3
-        guid: c6c5956f6809474797ed7be1c245882a
-      Path: Events\Default Work Unit\Win_Animation\Hammer_Start
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: Interactibles
       guid: b52060bab6026640a052f1e53b5845bf
       id: 2987141838
@@ -361,6 +375,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.5
       minDuration: 1.25
+    - name: Stop_Atmosphere
+      guid: 33b4b6831ef35049bdfeb4879585f074
+      id: 824189664
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7407ff416a69744e99d475f99a6ded15
+      - ElementName: Stop_Atmosphere
+        ObjectType: 3
+        guid: 33b4b6831ef35049bdfeb4879585f074
+      Path: Events\Default Work Unit\Stop_Atmosphere
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_BGM
       guid: 7ad8b17e4954cc45943a94e975b96360
       id: 1073466678
@@ -375,46 +406,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 7ad8b17e4954cc45943a94e975b96360
       Path: Events\Default Work Unit\Stop_BGM
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Talking_Start
-      guid: cda7093c8b2a7a44b3c6b228ff0433c6
-      id: 624453912
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7407ff416a69744e99d475f99a6ded15
-      - ElementName: Win_Animation
-        ObjectType: 4
-        guid: addceece59936f4f927111fc7a308b72
-      - ElementName: Talking_Start
-        ObjectType: 3
-        guid: cda7093c8b2a7a44b3c6b228ff0433c6
-      Path: Events\Default Work Unit\Win_Animation\Talking_Start
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Talking_Stop
-      guid: 4aae51e3927db543a5bc58a5eb1b0f47
-      id: 687379364
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 7407ff416a69744e99d475f99a6ded15
-      - ElementName: Win_Animation
-        ObjectType: 4
-        guid: addceece59936f4f927111fc7a308b72
-      - ElementName: Talking_Stop
-        ObjectType: 3
-        guid: 4aae51e3927db543a5bc58a5eb1b0f47
-      Path: Events\Default Work Unit\Win_Animation\Talking_Stop
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -648,7 +639,7 @@ MonoBehaviour:
     m_lastTime: -8585543264727911453
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 010000000500000006000000070000000e00000010000000110000001400000015000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

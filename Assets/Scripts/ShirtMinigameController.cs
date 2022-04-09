@@ -132,7 +132,7 @@ public class ShirtMinigameController : MonoBehaviour
             AkSoundEngine.PostEvent("Unsew", gameObject);
             //yield return new WaitForSeconds(sewingInterval);
             AkSoundEngine.PostEvent("Sew", gameObject);
-            Debug.Log("Sewing interval: "+sewingInterval);
+            //Debug.Log("Sewing interval: "+sewingInterval);
         }
     }
     private void AudioSetup()
