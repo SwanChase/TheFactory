@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(LineController))]
 public class LineController : MonoBehaviour
 {
-    [SerializeField]private List<Transform> nodes;
+    public List<Transform> nodes;
     private LineRenderer lr;
 
     public List<Transform> NodesList
@@ -21,6 +21,7 @@ public class LineController : MonoBehaviour
     {
         lr = GetComponent<LineRenderer>();
         lr.positionCount = nodes.Count;
+
     }
 
     // Update is called once per frame
