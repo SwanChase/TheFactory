@@ -2,12 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayBGM : MonoBehaviour
 {
+    static bool bGPlaying = false;
     public AK.Wwise.Event MyEvent;
     // Use this for initialization.
-    public void startBGM ()
+    void Start()
     {
-        MyEvent.Post(gameObject);
+        if (bGPlaying == false)
+        {
+            MyEvent.Post(gameObject);
+            bGPlaying = true;
+        }
     }
 }

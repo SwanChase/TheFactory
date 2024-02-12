@@ -31,6 +31,7 @@ public class DommeCodeVanYouriHoi : MonoBehaviour
         {
             GetComponent<MeshRenderer>().material = knipClosed;
             schaaarClosed = true;
+            AkSoundEngine.PostEvent("Cut", gameObject);
         }
         StartCoroutine("MaterialChange");
     }
